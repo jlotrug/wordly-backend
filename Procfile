@@ -1,1 +1,1 @@
-web: gunicorn wordly_backend.wsgi --log-file -
+web: gunicorn wordly_backend.wsgi.application --log-file -
