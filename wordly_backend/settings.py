@@ -29,7 +29,11 @@ SECRET_KEY = 'django-insecure-v6q7omw@h#-6a%cbcp1u#kbu%cv0^8vewac$319dxxja)rhlab
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    # "http://localhost:3000",
+    "localhost",
+    "https://wordlyapp.netlify.app"
+]
 
 
 # Application definition
@@ -51,7 +55,8 @@ INSTALLED_APPS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000"
+    "http://localhost:3000",
+    "https://wordlyapp.netlify.app"
 ]
 
 MIDDLEWARE = [
